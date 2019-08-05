@@ -1,13 +1,21 @@
-# numbers = ['0','1','2','3','4']
+"""
+It calculates the largest amount of consecutive zeros in a list
+"""
 
-ones_and_zeros = [1, 0, 0, 0, 1, 1, 0]
+my_list = [0]*4 +[1]*2 +[0]*2 + [1]*2
 
-zero_count = 0
+def max_zero_calc(my_list):
+    zero_count = 0
+    max_zero = 0
 
-for item in ones_and_zeros:
-    print(item)
-    if item == 0:
-        zero_count = zero_count + 1
+    for num in my_list:
+        if num == 0:
+            zero_count = zero_count+1
+        elif num == 1:
+            zero_count = 0
+        if zero_count > max_zero:
+            max_zero = zero_count
 
-print(f'zero count = {zero_count}')
+    return max_zero
 
+print(max_zero_calc(my_list))
