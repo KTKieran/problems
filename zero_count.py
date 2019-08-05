@@ -1,6 +1,6 @@
 # numbers = ['0','1','2','3','4']
 
-ones_and_zeros = [1, 0, 0, 0, 1, 1]
+ones_and_zeros = [1, 0, 0, 0, 1, 1, 0]
 
 zero_count = 0
 
